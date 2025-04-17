@@ -4,16 +4,12 @@ import './index.css'
 import App from './App.jsx'
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+   RouterProvider,
 } from "react-router";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello World</div>,
-  },
-]);
+import { router } from './Routs/Routs.jsx';
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
